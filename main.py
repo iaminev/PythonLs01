@@ -121,7 +121,7 @@ def LuckyTicket2():
 '''
 def Chocolate():
     print("Задача 8: Делим шоколадку.")
-    chocolate_height = int(input("Введите высоту шоколадки в дольках: "))
+    chocolate_height = int(input("Введите длину шоколадки в дольках: "))
     chocolate_width  = int(input("Введите ширину шоколадки в дольках: "))
     number_of_pieces = int(input("Введите количество долек: "))
 
