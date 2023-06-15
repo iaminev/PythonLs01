@@ -121,7 +121,7 @@ def LuckyTicket2():
 '''
 def Chocolate():
     print("Задача 8: Делим шоколадку.")
-    chocolate_height = int(input("Введите длину шоколадки в дольках: "))
+    chocolate_length = int(input("Введите длину шоколадки в дольках: "))
     chocolate_width  = int(input("Введите ширину шоколадки в дольках: "))
     number_of_pieces = int(input("Введите количество долек: "))
 
@@ -130,14 +130,14 @@ def Chocolate():
     #то есть, если количество отламываемых долек делится без остатка на любую из сторон, задача решаема.
     #причем, отламываемое количество должно быть меньше общего количества долек
 
-    if chocolate_height*chocolate_width < number_of_pieces:
+    if chocolate_length*chocolate_width < number_of_pieces:
         print(f'Нельзя отломить так много!')
     else:
-        can_be_divided = (number_of_pieces % chocolate_width == 0) | (number_of_pieces % chocolate_height == 0)
+        can_be_divided = (number_of_pieces % chocolate_width == 0) | (number_of_pieces % chocolate_length == 0)
         if can_be_divided:
-            print(f'От шоколадки размером {chocolate_height}*{chocolate_width} можно отломить {number_of_pieces} дольки ')
+            print(f'От шоколадки размером {chocolate_length}*{chocolate_width} можно отломить {number_of_pieces} дольки ')
         else:
-            print(f'От шоколадки размером {chocolate_height}*{chocolate_width} нельзя отломить {number_of_pieces} дольки ')
+            print(f'От шоколадки размером {chocolate_length}*{chocolate_width} нельзя отломить {number_of_pieces} дольки ')
     print("\n")
 
 if __name__ == '__main__':
