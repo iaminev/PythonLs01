@@ -19,11 +19,12 @@ def SumOfDigits():
     number = int(input("Введите 3-х значное (а можно и любое) число: "))
     temp_number = number
     sum = 0
+    result_string=''
     while temp_number > 0:
         sum += temp_number % 10
-        #print(f'{temp_number % 10}  {temp_number // 10}')
+        result_string = str(temp_number % 10) + ('' if result_string =='' else ' + ') + result_string
         temp_number = temp_number // 10
-    print(f'{number} -> {sum}')
+    print(f'{number} -> {sum} ({result_string})')
     print("\n")
 
 '''
