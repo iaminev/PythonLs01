@@ -1,9 +1,14 @@
 
-# Процедура определяет, високосный год или нет
+'''Процедура определяет, високосный год или нет
+в соответствии с григорианским календарем, год является
+високосным, если его номер кратен 4, но не кратен
+100, а также если он кратен 400.
+'''
 def LessonTask04LeapYear():
     print("Выясняем, является год високосным или нет")
     year = int(input('Введите год: '))
-    if year%4 == 0:
+
+    if (year%400 == 0) | ((year%4 == 0) & (year%100 != 0)):
         print(f'Год {year} - високосный')
     else:
         print(f'Год {year} - НЕ високосный')
@@ -137,8 +142,9 @@ def Chocolate():
 
 if __name__ == '__main__':
     LessonTask04LeapYear()
+    '''
     SumOfDigits()
     PaperCranes()
     LuckyTicket()
     LuckyTicket2()
-    Chocolate()
+    Chocolate()'''
