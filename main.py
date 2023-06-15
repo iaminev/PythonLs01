@@ -142,9 +142,8 @@ def Chocolate():
 
 if __name__ == '__main__':
     LessonTask04LeapYear()
-    '''
     SumOfDigits()
     PaperCranes()
     LuckyTicket()
     LuckyTicket2()
-    Chocolate()'''
+    Chocolate()
